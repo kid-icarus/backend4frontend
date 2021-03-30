@@ -26,7 +26,9 @@ function handleConnection(conn) {
     // note this is unsafe because we don't escape the data in 'd'
     // it could have html or javascript in it.
     var content = `<html>
-    <title>Welcome to my custom server</title>
+    <head>
+      <title>Welcome to my custom server</title>
+    </head>
     <body>
     <p>This is my custom response.
     <p>You wrote to me: <pre>"${d}"</pre>
